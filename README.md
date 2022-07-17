@@ -32,16 +32,16 @@ Fig. Heatmap of correlation between features
 
 ## TECHNIQUES / ALGORITHMS:
 Below we have mentioned the basic working of the algorithms which are being implemented. Along with that, the hyperparameters of each algorithm are mentioned. Hyperparameters are the specific parameters which increase the performance of the respective algorithms.
-Random Forest Classifier:
-Working:
+### Random Forest Classifier
+#### Working
 Selection of random samples from the dataset having n number of records.
 Construction of individual decision trees for each record.
 Output generated from each individual decision tree.
 Majority Voting or Averaging is being done to select the final result.
 	Important Hyperparameters involved: n_estimators, max_features, min_samples_leaf
 	
-### AdaBoost:
-Working:
+### AdaBoost
+#### Working
 Equal weights are assigned to each record in the dataset.
 On the subset of data, a model is trained. Predictions are made on the whole dataset using the same model.
 Comparison of prediction and actual values to calculate the errors.
@@ -50,8 +50,8 @@ In general, higher the error, more the weight assigned to that record, similarly
 Process repeated until the number of estimators doesn’t reach the maximum limit or error function doesn’t change.
 Important Hyperparameters involved: n_estimators, random_state
 
-### XGBoost:
-	Working: 
+### XGBoost
+#### Working
 Predictions from many models are merged into a single forecast.
 Then iteratively model each prediction depending on the mistake of its predecessor.
 The predictors that perform better are given more weights.
@@ -60,8 +60,8 @@ Decision trees as weak predictors are being used.
 	
 Important Hyperparameters involved: booster, reg_alpha and reg_lambda, max_depth, subsample, num_estimators
 
-### Support Vector Machine:
-	Working: 
+### Support Vector Machine
+#### Working
 Support Vectors are used.
 Say in a dataset we have two classes, red and black. We want to classify the new datapoint as either red or black. We try to find decision boundaries for the same.
 The best hyperplane is the one that has the greatest distance between both classes.
